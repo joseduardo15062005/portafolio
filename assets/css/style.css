@@ -1,0 +1,76 @@
+
+
+/*defualt styling for all elements*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --dark-blue: #0F044C;
+    --blue: #141E61;
+    --dark-gray: #787A91;
+    --gray: #EEEEEE;
+}
+/*Fonts Rules 
+font-family: 'Inconsolata', monospace;
+font-family: 'Roboto', sans-serif;
+*/
+
+/*Apply background Color to all page and Color to texts*/
+body{
+    background-color: var(--dark-blue);
+    color: var(--gray);
+}
+
+a {
+    color: var(--gray);
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--blue);
+    color: var(--dark-blue);
+    padding: 15px 50px 15px 0;
+    font-family: 'Roboto',sans-serif;
+    
+}
+
+header h1{
+    background-color: var(--dark-gray);
+    color: var(--gray);
+    padding: 15px 15px 15px 40px;
+    text-align: right;
+    width:300px;
+    font-size: 48px;
+    font-weight: 300;
+    
+}
+
+
+header nav{
+    padding-top: 30px;
+    font-family: 'Inconsolata',monospace;
+    font-size: 26px;
+    width: 480px;
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+/*hero styling*/
+.hero{
+    width: 100%;
+    height: 600px;
+    background-image: url('../images/code-back.jpg');
+    background-size: cover;
+
+    
+}
