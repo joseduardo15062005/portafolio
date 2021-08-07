@@ -32,7 +32,7 @@ a {
 header{
     display: flex;
     justify-content: space-between;
-    background-color: var(--blue);
+    background-color: var(--dark-blue);
     color: var(--dark-blue);
     padding: 15px 50px 15px 0;
     font-family: 'Roboto',sans-serif;
@@ -75,11 +75,55 @@ header nav ul{
     justify-content: flex-end;
     align-items: flex-end;
     padding:40px;
+    margin-bottom: 20px;
 }
 
-.hero h2{
+ .hero-title {
     background-color: var(--gray);
     color: var(--blue);
     font-family: 'Inconsolata',monospace;
     padding:20px 40px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-family: 'Inconsolata', monospace;
+    font-size: 48px;
+    width: 20%;
+    text-align: right;
+    padding:20px 10px;
+}
+
+
+section div{
+    width: 80%;
+    border-left: 3px solid var(--gray);
+    padding:20px 10px;
+}
+
+section div p{
+     font-family: 'Inconsolata',monospace;
+     font-size: 22px;
+     padding: 10px;
+}
+
+section div a {
+    font-family: 'Inconsolata', monospace;
+    font-size: 22px;
+    padding: 10px;
+}
+
+
+.work{
+    display: flex;
+}
+
+.contact-me{
+    display: flex;
+    justify-content: space-around;
 }
