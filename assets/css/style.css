@@ -168,3 +168,31 @@ section{
    flex: 1 50%
     
 }
+
+
+/*Media Screen Smaller Than 980 */
+@media screen and (max-width:980px) {
+
+    header {
+        width: 100%;
+        padding: 0;
+    }
+
+    header h1{
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav{
+        width: 100%;
+    }
+    header nav ul{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        padding-bottom: 10px;
+
+    }
+    
+}
