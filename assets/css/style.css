@@ -22,6 +22,7 @@ font-family: 'Roboto', sans-serif;
 body{
     background-color: var(--dark-blue);
     color: var(--gray);
+    font-family: 'Roboto',sans-serif;
 }
 
 a {
@@ -91,39 +92,73 @@ section{
     margin-bottom: 20px;
 }
 
-.title {
-    font-family: 'Inconsolata', monospace;
-    font-size: 48px;
+
+
+.col-title{
     width: 20%;
     text-align: right;
+    font-family: 'Inconsolata',
+    monospace;
+    font-size: 32px;
     padding:20px 10px;
 }
-
-
-section div{
+.col-content {
     width: 80%;
     border-left: 3px solid var(--gray);
     padding:20px 10px;
 }
 
-section div p{
-     font-family: 'Inconsolata',monospace;
-     font-size: 22px;
-     padding: 10px;
-}
-
-section div a {
-    font-family: 'Inconsolata', monospace;
+.col-content p{
+    font-family: 'Inconsolata',monospace;
     font-size: 22px;
-    padding: 10px;
-}
-
-
-.work{
-    display: flex;
 }
 
 .contact-me{
     display: flex;
     justify-content: space-around;
+}
+
+.contact-me a {
+    font-family: 'Inconsolata', monospace;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.works{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 10px;
+    
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+
+.work{
+    position: relative;
+    margin: 20px;;
+}
+
+.work h3{
+    background-color: var(--gray);
+    padding: 10px 40px 10px 10px;
+    color: var(--dark-blue);
+
+}
+
+.work h3 span{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.work img{
+    border: 4px solid var(--gray);
+    height: 240px;
+    width: auto;
+   flex: 1 50%
+    
 }
