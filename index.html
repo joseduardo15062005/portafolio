@@ -12,12 +12,12 @@
 </head>
 <body>
     <header>
-        <h1>jseduardo</h1>
+        <h1 id="header">jseduardo</h1>
         <nav>
             <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact Me</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
                 <li><a href="#">Resume</a></li>
             </ul>
         </nav>
@@ -26,7 +26,7 @@
         <h2 class="hero-title">Cool text here</h2>
     </section>
 
-    <section>
+    <section id="about-me">
         <div class="col-title">
             <h2>about Me</h2>
         </div>
@@ -46,7 +46,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="works">
         <div class="col-title">
             <h2 class="title">work</h2>
         </div>
@@ -71,9 +71,9 @@
         </div>
     </section>
 
-    <section>
+    <section id="contact-me">
         <div class="col-title">
-            <h2 class="title">contactMe</h2>
+            <h2 class="title">contact Me</h2>
         </div>
         <div class="col-content contact-me">
             <a href="tel:7025555555">(702) 555-5555</a>
@@ -82,6 +82,17 @@
         </div>
     </section>
 
-    
+    <script>
+    // When the user scrolls down 50px from the top of the document, resize the header's font size
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("header").style.fontSize = "32px";
+    } else {
+        document.getElementById("header").style.fontSize = "48px";
+    }
+    }
+</script>
 </body>
 </html>
