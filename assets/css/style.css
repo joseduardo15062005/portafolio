@@ -23,6 +23,7 @@ body{
     background-color: var(--dark-blue);
     color: var(--gray);
     font-family: 'Roboto',sans-serif;
+     width: 100%;
 }
 
 a {
@@ -194,5 +195,49 @@ section{
         padding-bottom: 10px;
 
     }
+    
+}
+
+
+
+@media screen  and (max-width:575px) {
+
+    section{
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    header nav {
+        padding-top: 10px;
+    }
+
+    header nav ul{
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    .col-title{
+        width: 100%;
+        text-align: center;
+        border-bottom: 4px solid var(--gray);
+    }
+
+    .col-content{
+        width: 100%;
+        border:none;
+        margin: 0;
+    }
+
+    .works{
+        width: 100%;
+        padding:0;
+    }
+
+    .contact-me{
+        flex-flow: column wrap;
+    }
+
+   
+    
     
 }
