@@ -135,7 +135,6 @@ section{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    margin: 10px;
     
 }
 
