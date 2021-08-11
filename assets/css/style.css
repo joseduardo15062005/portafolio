@@ -208,7 +208,6 @@ section{
 
 @media screen and (max-width:1024px) {
 
-
     .works-container,.main-work,
     .other-work {
         width: 100%;
@@ -222,6 +221,11 @@ section{
 
 /*Media Screen Smaller Than 980 */
 @media screen and (max-width:980px) {
+   section{
+       flex-flow: column wrap;
+       align-items: center;
+
+   }
 
     header {
         width: 100%;
@@ -246,6 +250,12 @@ section{
     }
     .col-title{
         font-size: 26px;
+        width: 100%;
+        text-align: center;
+    }
+    .col-content{
+        border: none;
+        width: 80%;
     }
 
     
@@ -278,6 +288,9 @@ section{
 
 @media screen  and (max-width:575px) {
 
+    .col-content{
+        width: 100%;
+    }
    
 
     
