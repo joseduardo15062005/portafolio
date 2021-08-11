@@ -298,7 +298,7 @@ section{
 
     .col-title{
         font-size: 26px;
-        width: 50%;
+        width: 70%;
         text-align: center;
         border-bottom: 3px solid var(--gray);
 
@@ -321,10 +321,6 @@ section{
      header nav ul {
          flex-flow: column wrap;
          align-items: center;
-     }
-
-     .col-title {
-         width: 100%;
      }
 
      
