@@ -7,18 +7,20 @@
     margin: 0;
 }
 
+/*Define Variables for color of the site*/
 :root {
     --dark-blue: #0F044C;
     --blue: #141E61;
     --dark-gray: #787A91;
     --gray: #EEEEEE;
 }
-/*Fonts Rules 
+
+/*Fonts Rules  for google fonts
 font-family: 'Inconsolata', monospace;
 font-family: 'Roboto', sans-serif;
 */
 
-/*Apply background Color to all page and Color to texts*/
+/*Define the color and style for the body*/
 body{
     background-color: var(--dark-blue);
     color: var(--gray);
@@ -26,11 +28,19 @@ body{
      width: 100%;
 }
 
+/*Define the color for the anchors elements*/
 a {
     color: var(--gray);
     text-decoration: none;
 }
 
+section, footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/*Header section styling*/
 header{
     display: flex;
     flex-flow:  row wrap;
@@ -43,7 +53,6 @@ header{
     position: sticky;
     top:0;
     z-index: 999;
-    
 }
 
 header h1{
@@ -55,9 +64,7 @@ header h1{
     font-size: 48px;
     font-weight: 300;
     transition: 0.2s;
-    
 }
-
 
 header nav{
     padding-top: 30px;
@@ -65,7 +72,6 @@ header nav{
     font-size: 26px;
     width: 480px;
 }
-
 header nav ul{
     list-style-type: none;
     display: flex;
@@ -93,14 +99,20 @@ header nav ul{
     padding:20px 40px;
 }
 
-section{
+/*Define styling for Footer*/
+footer .contact-me {
     display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+footer .contact-me a {
+    font-family: 'Inconsolata', monospace;
+    font-size: 22px;
+    padding: 10px;
 }
 
 
-
+/*Reusable selectors*/
 .col-title{
     width: 20%;
     text-align: right;
@@ -119,40 +131,28 @@ section{
     font-size: 22px;
 }
 
-.contact-me{
-    display: flex;
-    justify-content: space-around;
-}
-
-.contact-me a {
-    font-family: 'Inconsolata', monospace;
-    font-size: 22px;
-    padding: 10px;
-}
-
-.col-content h3{
+.col-content h3 {
     background-color: var(--gray);
     padding: 10px 40px 10px 10px;
     color: var(--dark-blue);
 
 }
 
-.col-content h3 span{
+.col-content h3 span {
     font-size: 16px;
     font-weight: 300;
 }
 
-
-.col-image{
+.col-image {
     width: 20%;
     margin: 0 auto;
 }
 
-.col-image img{
+.col-image img {
     width: 100%;
 }
 
-.col-bio{
+.col-bio {
     width: 70%;
 }
 
@@ -182,10 +182,11 @@ section{
    
 }
 
+
+/*Define styling for works picture*/
 .main-work, .other-work{
     position: relative;
     background-size: cover;
-   
     border: 2px solid var(--gray);
 }
 
@@ -200,6 +201,8 @@ section{
     height: 150px;
 }
 
+
+/*Define background for each work in the sections works.*/
 .work-1{
     background-image: url('../images/html.jpg');
 }
@@ -230,9 +233,8 @@ section{
     font-size: 16px;
     font-weight: 300;
 }
-
+/*Media Screen Smaller Than 1024px */
 @media screen and (max-width:1024px) {
-
     .works-container,.main-work,
     .other-work,
     .col-image,
@@ -244,7 +246,6 @@ section{
     .main-work, .other-work{
         background-position: center;
     }
-
     
     .col-image{
         display: flex;
@@ -259,14 +260,11 @@ section{
         height: 200px;
     }
 }
-
-
-/*Media Screen Smaller Than 980 */
+/*Media Screen Smaller Than 980px */
 @media screen and (max-width:980px) {
-   section{
+   section, footer{
        flex-flow: column wrap;
        align-items: center;
-
    }
 
     header {
@@ -292,28 +290,24 @@ section{
         flex-flow: row wrap;
         justify-content: space-evenly;
         padding-bottom: 10px;
-
     }
   
-
     .col-title{
         font-size: 26px;
         width: 70%;
         text-align: center;
         border-bottom: 3px solid var(--gray);
-
     }
+
     .col-content{
         border: none;
         width: 80%;
     }
     
-    
 }
 
+/*Media Screen Smaller Than 768px */
 @media screen and (max-width:768px) {
-    
-     
      header nav {
          padding-top: 10px;
      }
@@ -323,26 +317,15 @@ section{
          align-items: center;
      }
 
-     
-
-     .contact-me {
+     footer .contact-me {
          flex-flow: column wrap;
+         align-items: center;
      }
-
 }
 
-
-
+/*Media Screen Smaller Than 575px */
 @media screen  and (max-width:575px) {
-
     .col-content{
         width: 100%;
     }
-   
-
-    
-
-   
-    
-    
 }
